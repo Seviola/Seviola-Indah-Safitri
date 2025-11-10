@@ -4,8 +4,8 @@ Program ini menampilkan cara menggunakan FreeRTOS multitasking pada ESP32-S3 unt
 
 ## Deskripsi Singkat
 ESP32-S3 memiliki dua core (Core 0 dan Core 1) yang dapat digunakan untuk menjalankan dua task secara bersamaan.  
-Dalam program ini, task pertama dijalankan pada *Core 0, dan task kedua dijalankan pada **Core 1*.  
-Kedua task membaca nilai potensiometer yang terhubung ke pin ADC (GPIO 4) dengan interval waktu 300 ms, lalu menampilkan nilai *Raw ADC, **hasil konversi tegangan, serta **ID core* tempat task berjalan.
+Dalam program ini, task pertama dijalankan pada _Core 0_, dan task kedua dijalankan pada _Core 1_.  
+Kedua task membaca nilai potensiometer yang terhubung ke pin ADC (GPIO 4) dengan interval waktu 300 ms, lalu menampilkan nilai Raw ADC, hasil konversi tegangan, serta ID core tempat task berjalan.
 
 ## Konfigurasi Pin
 | Komponen      | GPIO ESP32 | Keterangan       |
