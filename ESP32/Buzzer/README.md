@@ -7,6 +7,7 @@ Dengan menunjukkan cara menghasilkan suara dari buzzer aktif atau pasif mengguna
   - Nada 2: 2000 Hz (2 kHz) selama 500 ms
 - Setiap nada dipisahkan dengan jeda 300 ms
 - Proses dilakukan secara manual menggunakan fungsi toneManual().
+Program menghasilkan dua nada berurutan — pertama 1 kHz (rendah), kemudian 2 kHz (tinggi)
 ## Konfigurasi Pin
 | KOMPONEN | GPIO  | Keterangan | 
 | :--- | :---: | :---: |
@@ -17,3 +18,4 @@ Dengan menunjukkan cara menghasilkan suara dari buzzer aktif atau pasif mengguna
 
 ## Video Demonstrasi
 https://drive.google.com/file/d/1hNiSyfE4Q9e6eAvovC0qp9INhx_u-0ji/view?usp=drive_link
+
