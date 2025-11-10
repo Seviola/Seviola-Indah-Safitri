@@ -15,9 +15,9 @@ Setiap LED berkedip dengan interval berbeda :
 | Biru | 16 | GND |
 ## Penjelasan Program
 ### Kode Definisi:
-
+Bagian ini berfungsi untuk mendefinisikan pin GPIO yang digunakan oleh masing-masing LED
 ```c
 #define LED_RED     2
 #define LED_GREEN   5
 #define LED_BLUE    16
-Bagian ini berfungsi untuk mendefinisikan pin GPIO yang digunakan oleh masing-masing LED
+
