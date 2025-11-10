@@ -14,6 +14,6 @@ Setiap LED berkedip dengan interval berbeda :
 | Hijau | 5 | GND |
 | Biru | 16 | GND |
 ## Foto Hasil Simulasi
-https://drive.google.com/uc?export=view&id=ID_FILE
+[https://drive.google.com/uc?export=view&id=ID_FILE](https://drive.google.com/file/d/1wIyBtPbgF6W6BmdSjO8cGHND4KsplwhC/view?usp=drive_link)
 
 ## Video Demonstrasi
