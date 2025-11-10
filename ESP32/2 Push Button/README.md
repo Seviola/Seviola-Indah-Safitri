@@ -5,3 +5,9 @@ Dengan menampilkan cara menggunakan FreeRTOS multitasking pada ESP32-S3 untuk me
 - Tombol 2 (GPIO 21) dijalankan pada Core 1
 - Setiap tombol dibaca menggunakan task terpisah yang berjalan bersamaan
 - Output status tombol (DITEKAN / DILEPAS) ditampilkan melalui Serial Monitor
+### Konfigurasi Pin
+| TOMBOL | GPIO  | Koneksi Tambahan |
+| :--- | :---: | :---: |
+| Tombol 1 | 47 | GND |
+| Tombol 2 | 21 | GND |
+
