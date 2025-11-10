@@ -20,9 +20,9 @@ Bagian ini berfungsi untuk mendefinisikan pin GPIO yang digunakan oleh masing-ma
 #define LED_RED     2
 #define LED_GREEN   5
 #define LED_BLUE    16
-` ``` `
-'### Task untuk LED Merah'
-Bagian ini berisi implementasi Task FreeRTOS spesifik untuk mengendalikan LED Merah. Task ini diatur agar berkedip dengan interval 300 ms secara terus-menerus.
+
+### Task untuk LED Merah
+Task ini mengendalikan LED Merah, diatur agar berkedip dengan interval 300 ms, berjalan pada Core 0
 ```c
 void TaskLED_Red(void *pvParameters) {
   pinMode(LED_RED, OUTPUT);
@@ -33,3 +33,4 @@ void TaskLED_Red(void *pvParameters) {
     vTaskDelay(pdMS_TO_TICKS(300));
   }
 }
+
