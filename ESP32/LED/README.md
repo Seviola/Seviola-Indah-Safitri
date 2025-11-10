@@ -13,25 +13,7 @@ Setiap LED berkedip dengan interval berbeda :
 | Merah | 2 | GND |
 | Hijau | 5 | GND |
 | Biru | 16 | GND |
-## Penjelasan Program
-### Kode Definisi:
-Bagian ini berfungsi untuk mendefinisikan pin GPIO yang digunakan oleh masing-masing LED
-```c
-define LED_RED     2
-define LED_GREEN   5
-define LED_BLUE    16
+## Foto Hasil Simulasi
+https://drive.google.com/uc?export=view&id=ID_FILE
 
-// ==============================================
-// TASK LED MERAH (Core 0 - GPIO 2)
-// ==============================================
-void TaskLED_Red(void *pvParameters) {
-  pinMode(LED_RED, OUTPUT);
-  for (;;) {
-    digitalWrite(LED_RED, HIGH);
-    vTaskDelay(pdMS_TO_TICKS(300));
-    digitalWrite(LED_RED, LOW);
-    vTaskDelay(pdMS_TO_TICKS(300));
-  }
-}
-// ==============================================
-
+## Video Demonstrasi
