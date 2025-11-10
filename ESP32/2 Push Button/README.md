@@ -1,3 +1,7 @@
 # ESP32-S3 : Dua Tombol di Dua Core (FreeRTOS)
 Dengan menampilkan cara menggunakan FreeRTOS multitasking pada ESP32-S3 untuk membaca dua tombol push button yang dijalankan secara paralel pada dua core berbeda. Tiap tombol dikontrol oleh task yang berjalan di core tersendiri.
 ## Deskripsi Singkat
+- Tombol 1 (GPIO 47) dijalankan pada Core 0
+- Tombol 2 (GPIO 21) dijalankan pada Core 1
+- Setiap tombol dibaca menggunakan task terpisah yang berjalan bersamaan
+- Output status tombol (DITEKAN / DILEPAS) ditampilkan melalui Serial Monitor
