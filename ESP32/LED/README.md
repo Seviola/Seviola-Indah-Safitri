@@ -21,3 +21,21 @@ Bagian ini berfungsi untuk mendefinisikan pin GPIO yang digunakan oleh masing-ma
 #define LED_GREEN   5
 #define LED_BLUE    16
 
+### Task untuk LED Merah
+pinMode(LED_RED, OUTPUT); → Mengatur GPIO 2 sebagai output.
+digitalWrite(LED_RED, HIGH); → Menyalakan LED merah.
+vTaskDelay(pdMS_TO_TICKS(300)); → Menunda 300 ms tanpa menghentikan task lain.
+digitalWrite(LED_RED, LOW); → Mematikan LED merah.
+for(;;) → Membuat task berjalan terus-menerus.
+Hasil: LED merah berkedip setiap 300 ms secara terus-menerus di Core 0.
+```c
+void TaskLED_Red(void *pvParameters) {
+  pinMode(LED_RED, OUTPUT);
+  for (;;) {
+    digitalWrite(LED_RED, HIGH);
+    vTaskDelay(pdMS_TO_TICKS(300));
+    digitalWrite(LED_RED, LOW);
+    vTaskDelay(pdMS_TO_TICKS(300));
+  }
+}
+
